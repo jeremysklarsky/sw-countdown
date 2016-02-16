@@ -1,0 +1,16 @@
+<h1 class='title'>Star Wars Ep. VIII Countdown</h1>
+<div class='content'>
+  <div class='prediction'>
+    Today's Prediction: <br>
+    <%= @prediction.question %><br>
+    <%= @prediction.answer %>
+  </div>
+
+  <div class='quote'>
+    Quote of the day: <%= @quote %>
+  </div>
+
+  <div class='countdown'>
+    There is <span id='years'><%= @countdown.my_years %></span> year, <span id='days'><%= @countdown.my_days %></span> days, <span id='hours'><%= @countdown.my_hours %></span> hours, <span id='minutes'><%= @countdown.my_minutes %></span> minutes and <span id='seconds'><%= @countdown.my_seconds %></span> seconds until Episode VIII.
+  </div>  
+</div>
