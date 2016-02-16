@@ -33,6 +33,7 @@ $( document ).ready(function() {
   function lowerMinutes() {
     minutes = minutes - 1;
     if (minutes < 0) {
+      minutes = 59;
       lowerHours();
     }
   }
@@ -40,6 +41,7 @@ $( document ).ready(function() {
   function lowerHours() {
     hours = hours - 1;
     if (hours < 0) {
+      hours = 23;
       lowerDays();
     }
   }
